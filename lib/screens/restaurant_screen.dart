@@ -132,8 +132,8 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
   }
 
   Widget _buildMenuItem(Food food) {
-    return Padding(
-      padding: EdgeInsets.all(15.0),
+    return Container(
+      margin: EdgeInsets.all(15.0),
       child: Center(
         child: Stack(
           alignment: Alignment.center,
