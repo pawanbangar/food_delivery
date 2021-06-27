@@ -119,39 +119,41 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Container(
                 margin: EdgeInsets.all(12.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      element.name,
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 4.0,
-                    ),
-                    RatingStars(element.rating),
-                    SizedBox(
-                      height: 4.0,
-                    ),
-                    Text(
-                      element.address,
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                          fontWeight: FontWeight.w600, fontSize: 16.0),
-                    ),
-                    SizedBox(
-                      height: 4.0,
-                    ),
-                    Text("0.2 miles away",
+                child: Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        element.name,
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
-                            fontWeight: FontWeight.w600, fontSize: 16.0))
-                  ],
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 4.0,
+                      ),
+                      RatingStars(element.rating),
+                      SizedBox(
+                        height: 4.0,
+                      ),
+                      Text(
+                        element.address,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600, fontSize: 16.0),
+                      ),
+                      SizedBox(
+                        height: 4.0,
+                      ),
+                      Text("0.2 miles away",
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600, fontSize: 16.0))
+                    ],
+                  ),
                 ),
               ),
             ],
